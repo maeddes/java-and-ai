@@ -1,0 +1,17 @@
+curl -fsSL https://ollama.com/install.sh | sh
+OR
+brew install ollama
+
+ollama serve
+
+ollama pull llama3.1
+
+ollama ls
+OR 
+ollama list
+
+ollama run gemma2:2b
+
+ollama ps
+
+ollama list
