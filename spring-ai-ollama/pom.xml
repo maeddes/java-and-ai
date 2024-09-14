@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>spring-boot-ollama</artifactId>
+	<artifactId>spring-ai-ollama</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-boot-ollama</name>
+	<name>spring-ai-ollama</name>
 	<description>Demo project for Spring Boot and Ollama</description>
 	<url/>
 	<licenses>
