@@ -14,7 +14,6 @@ public class SpringAiOpenaiApplication {
 	@Autowired
 	OpenAiChatModel model;
 
-
 	@GetMapping("/")
 	public String sayHello(){
 
