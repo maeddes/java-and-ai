@@ -14,6 +14,9 @@ public class AlternativeController {
 
     private ChatClient client;
 
+    record FootballTitles(List<String> titles) {
+    }
+
     public AlternativeController(ChatClient.Builder builder){
 
         client = builder.build();
@@ -31,13 +34,26 @@ public class AlternativeController {
 
     }
 
-    @GetMapping("/vfb")
-    public List<String> promptVfB(){
+    @GetMapping("/champions")
+    public List<String> titles(){
 
         return client.prompt()
             .user("List the years of VfB Stuttgart being German champion")
             .call()
             .entity(new ParameterizedTypeReference<List<String>>() {});
         }
+
+    @GetMapping("/titles")
+    public String champions(){
+
+        FootballTitles titles = client.prompt()
+            .user("List all titles of VfB Stuttgart in their history")
+            .call()
+            .entity(FootballTitles.class);
+
+        System.out.println("Titles: "+titles);
+        
+        return titles.toString();
+    }
 
 }
