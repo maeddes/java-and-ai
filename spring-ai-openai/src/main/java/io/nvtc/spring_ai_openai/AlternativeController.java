@@ -47,7 +47,7 @@ public class AlternativeController {
     public String champions(){
 
         FootballTitles titles = client.prompt()
-            .user("List all titles of VfB Stuttgart in their history")
+            .user("List all titles of VfB Stuttgart in their history in the form title and year")
             .call()
             .entity(FootballTitles.class);
 
