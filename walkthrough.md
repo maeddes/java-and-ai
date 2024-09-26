@@ -113,9 +113,17 @@ ollama list
 
 ### Quarkus and Langchain4j
 
+Quarkus:
+- https://code.quarkus.io/
+
 Docs:
 - https://docs.langchain4j.dev/
 - https://docs.quarkiverse.io/quarkus-langchain4j/dev/index.html
+
+```
+quarkus.langchain4j.ollama.chat-model.model-id=llama3.1:latest
+quarkus.langchain4j.ollama.log-requests=true
+```
 
 ```xml
         <dependency>
