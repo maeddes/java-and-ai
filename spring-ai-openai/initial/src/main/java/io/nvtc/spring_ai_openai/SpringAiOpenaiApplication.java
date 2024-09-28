@@ -10,6 +10,24 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SpringAiOpenaiApplication {
 
+	OpenAiChatModel model;
+
+	@Value
+
+	public SpringAiOpenaiApplication(OpenAiChatModel model){
+
+		this.model = model;
+
+	}
+	
+	@GetMapping
+	public String sayHello(){
+
+
+
+	}
+
+
 	public static void main(String[] args) {
 		SpringApplication.run(SpringAiOpenaiApplication.class, args);
 	}

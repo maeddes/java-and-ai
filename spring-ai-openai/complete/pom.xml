@@ -11,7 +11,7 @@
 	<groupId>io.nvtc</groupId>
 	<artifactId>spring-ai-openai-complete</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-ai-openai</name>
+	<name>spring-ai-openai-complete</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
