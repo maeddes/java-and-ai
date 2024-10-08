@@ -23,6 +23,12 @@ public class AlternativeController {
 
     }
 
+/**
+ * 
+ * generate response as plain String with .content() method
+ * 
+ */
+
     @GetMapping("/movie")
     public String generateResponse(){
 
@@ -34,6 +40,12 @@ public class AlternativeController {
 
     }
 
+/**
+ * 
+ * generate response as as List of Strings with ParameterizedTypeReference
+ * 
+ */
+
     @GetMapping("/champions")
     public List<String> titles(){
 
@@ -42,6 +54,12 @@ public class AlternativeController {
             .call()
             .entity(new ParameterizedTypeReference<List<String>>() {});
         }
+
+/**
+ * 
+ * direct mapping into predefined Java class/record with entity
+ * 
+ */
 
     @GetMapping("/titles")
     public String champions(){
